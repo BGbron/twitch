@@ -1,0 +1,254 @@
+@import './node_modules/simplebar/dist/simplebar.css';
+html {
+  --purple:#772CE8;
+  --lightpurple:#986be0;
+  --dropdown: #fff;
+  --main:#F7F7F8;
+  --sidebarbg:#EFEFF1;
+  --dropdownshadow:#e0e0e0;
+  --ionicon:#000;
+  --ioniconhover:#e0e0e0;
+  --bitshover:#d3d3d3;
+  --searchiconbg:#f4f4f4;
+  --avatarbg: #e0e0e0;
+  --personicon:#fff;
+  --advertisedChnShadow: #333333;
+  --channelsWidth: 250px;
+  --smchannelsWidth: 120px;
+  --whispersOpenThread:295px;
+  font-size: 10px;
+  user-select: none;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-container.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-c-start {
+  align-self: flex-start;
+}
+.align-s-center {
+  align-self: center;
+}
+.flex-container.justify-center {
+  justify-content: center;
+}
+.flex-container.justify-end {
+  justify-content: flex-end;
+}
+.justify-sb {
+  justify-content: space-between;
+}
+.grow-1 {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.author-credit {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.bd-5 {
+  border-radius: 5px;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.avatar-container {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--avatarbg);
+}
+.person-icon {
+  color:var(--personicon);
+  font-size: 14px;
+}
+ion-icon {
+  color: var(--ionicon);
+}
+.sm-screen {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-y: hidden;
+}
+h1,h2,h3,h4,p,a,ul,li {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  z-index: 100;
+  background-color: var(--dropdown);
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid var(--dropdownshadow);
+  padding-right: 6px;
+  height: 44px;
+}
+.twitch-logo {
+  font-size: 30px;
+  color: var(--purple);
+  padding: 7px;
+}
+.nav-links {
+  margin: 0 18px;
+  font-size: 1.8rem;
+  color: var(--ionicon);
+  
+}
+
+.nav-links:hover {
+  color: var(--purple);
+}
+.three-dots {
+  font-size: 18px;
+  padding: 4px;
+  margin: 0 10px;
+}
+.three-dots:hover {
+  background-color: var(--ioniconhover);
+}
+.search-bar-container {
+  width: 90%;
+  max-width: 350px;
+}
+.search-bar {
+  padding: 7px 0 7px 7px;
+  border: 2px solid var(--ioniconhover);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+  margin-right: 2px;
+  background-color: var(--ioniconhover);
+  color: var(--ionicon);
+}
+.search-bar:focus {
+  border-color: var(--purple);
+}
+.search-icon-container {
+  background-color: var(--searchiconbg);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.search-icon {
+  font-size:2.2rem;
+  padding: 5px;
+  color: var(--ioniconhover);
+}
+.header-icons-right-container {
+  margin-right: 10px;
+}
+.header-icons-right {
+  font-size: 2rem;
+  padding: 4px;
+}
+.divlado{
+    width: 10vw;
+    height: 87vh;
+    margin: 30px;
+    outline: 0;
+    font-size: ;
+    
+    
+}
+.cadastre{
+    background-color: var(--purple);
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 5px;
+}
+.cadastre:hover{
+    color: white;
+}
+.enter{
+    background-color: grey;
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 5px;
+}
+.enter:hover{
+    color: white;
+}
+.pequeno{
+  font-size: 15px;
+  
+}
+.grande{
+  font-size: 25px;
+}
+.roxo{
+  color: var(--purple);
+}
+.margin{
+  margin: 100px;
+}
+.footer1{
+ height: 20px;
+    background-color: var(--purple);
+  }
+  .divlado2{
+    display: flex;
+  }
+  .lado2{
+    background-color:#F7F7F8;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+  }
+ .titulo{
+   font-size: 14px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+ }
+ .jogo{
+   font-size: 12px;
+ }
+ .legenda{
+   list-style: none;
+   display: flex;
+ }
+ .legenda li{
+   background-color: rgb(223, 221, 221);
+   font-size: 13px;
+   border-radius: 10px;
+   margin-right: 4px;
+   padding: 3px 5px;
+ }
+ .card{
+  margin-right: 15px;
+  margin-top: 50px;
+ }
